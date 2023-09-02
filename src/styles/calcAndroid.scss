@@ -1,0 +1,54 @@
+.calculator-android {
+   font-family: 'Roboto';
+   display: grid;
+   grid-template-rows: 1fr 2fr;
+   width: 300px;
+   height: 570px;
+   background-color: white;
+   border-radius: 10px 10px 20px 20px;
+}
+
+.calculator__output {
+   display: grid;
+   background-color: rgb(234, 240, 247);
+   grid-template-rows: 2fr 1fr;
+   padding: 10px;
+   border-radius: 10px 10px 20px 20px;
+   color: #000;
+}
+
+.output__wrapper {
+   display: flex;
+   align-items: flex-end;
+   flex-direction: row;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+}
+
+.output__current-operand,
+.output__previous-operand,
+.output__operation {
+   font-size: 25px;
+   font-weight: 400;
+   max-width: 280px;
+}
+
+.calculator__result {
+   font-size: 20px;
+   font-weight: 400;
+   padding: 0 10px 15px 10px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+}
+
+.calculator__button {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+   grid-gap: 5px;
+   justify-content: space-between;
+   align-items: center;
+   justify-items: center;
+   padding: 10px;
+}
